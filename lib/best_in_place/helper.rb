@@ -24,6 +24,8 @@ module BestInPlace
         collection = best_in_place_collection_builder(type, collection)
         display_value = collection.flat_map{|a| a[0].to_s == value ? a[1] : nil }.compact[0]
         collection = collection.to_json
+        puts collection.to_s
+        puts "***************************************))))))))))))))))))))))))))))))"
         options[:data]['bip-collection'] = html_escape(collection)
       end
 
